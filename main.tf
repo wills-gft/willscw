@@ -4,7 +4,7 @@ provider "aws" {
 
 
 module "Webserver" {
-  source = "./modules/service/webserver-cluster"
+  source = "./modules/services/webserver-cluster"
   cluster_name = foo
   min_size     = 1
   max_size     = 5
