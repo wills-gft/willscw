@@ -48,8 +48,7 @@ resource "aws_autoscaling_group" "example" {
 # ---------------------------------------------------------------------------------------------------------------------
 
 resource "aws_launch_configuration" "example" {
-  # Ubuntu Server 18.04 LTS (HVM), SSD Volume Type in us-east-2
-  image_id        = "ami-0c55b159cbfafe1f0"
+  image_id        = "ami-03d75788b2e799db8"
   instance_type   = var.instance_type
   security_groups = [aws_security_group.instance.id]
 
